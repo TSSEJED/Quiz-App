@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiddenDev Programming Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <h1>HiddenDev Programming Quiz</h1>
+            <p>Select your difficulty level to begin.</p>
+            <div id="difficulty-selection">
+                <button class="difficulty-btn" data-difficulty="beginner">Beginner</button>
+                <button class="difficulty-btn" data-difficulty="expert">Expert</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen" style="display: none;">
+            <div id="question-container">
+                <h2 id="question-text">Question text goes here.</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Buttons will be dynamically inserted here -->
+                </div>
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is: <span id="score-text">0</span></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+        <div id="custom-alert" class="alert-overlay" style="display: none;">
+        <div class="alert-box">
+            <h2>Action Disabled</h2>
+            <p>Right-clicking has been disabled on this page.</p>
+            <button id="alert-ok-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
